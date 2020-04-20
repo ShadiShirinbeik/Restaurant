@@ -61,3 +61,59 @@
     color: $color-dark;
   }
 }
+
+.card {
+  width: 33.3333%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .card-overlay {
+      left: 0;
+  }
+
+  &-overlay {
+    @extend %fullSpace;
+    @include flexLayout();
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    color: $color-white;
+    background-color: rgba($color-black, 0.6);
+    z-index: 10;
+    transition: left 0.5s;
+
+    &-heading {
+      font-family: $font-nastaliq;
+      letter-spacing: 2px;
+      @include textStyle();
+    }
+
+    &-paragraph {
+      font-family: $font-sahel;
+      font-size: 30px;
+      margin-bottom: 20px;
+      @include textStyle();
+    }
+
+    &-btn {
+      width: 150px;
+      height: 40px;
+      color: $color-primary;
+      background-color: transparent;
+      font-family: $font-sahel;
+      font-size: 14px;
+      border: 1px solid $color-primary;
+      border-radius: 30px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  &-img {
+    @extend %fullSpace;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+}
