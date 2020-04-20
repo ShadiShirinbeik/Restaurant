@@ -8,6 +8,16 @@
   right: 5%;
   z-index: 300;
 
+  @media (max-width: 800px) {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media (max-width: 500px) {
+    width: 25px;
+    height: 25px;
+  }
+
   .menu {
     @extend %fullSpace;
     display: flex;
@@ -22,6 +32,14 @@
       background-color: $color-primary;
       transition: all 0.5s;
       transform-origin: right;
+
+      @media (max-width: 800px) {
+        height: 3px;
+      }
+
+      @media (max-width: 500px) {
+        height: 2px;
+      }
     }
   }
 }
@@ -35,6 +53,26 @@
   border: 3px solid $color-primary;
   border-radius: 50%;
   margin-right: 20px;
+  text-decoration: none;
+
+  @media (max-width: 1000px) {
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+  }
 }
 
 .main-name {
@@ -42,6 +80,22 @@
   font-size: 50px;
   color: $color-secondary;
   @include textStyle();
+
+  @media (max-width: 1000px) {
+    font-size: 40px;
+  }
+  @media (max-width: 800px) {
+    font-size: 35px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 25px;
+    text-align: center;
+  }
 }
 
 .sub-name {
@@ -50,6 +104,14 @@
   color: $color-secondary;
   text-align: center;
   @include textStyle();
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 }
 
 .main-heading {
@@ -59,6 +121,18 @@
   color: $color-primary;
   margin-bottom: 40px;
 
+  @media (max-width: 1600px) {
+    font-size: 80px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 .sub-heading {
@@ -67,6 +141,25 @@
   font-weight: 300;
   color: $color-secondary;
   margin-bottom: 80px;
+  text-align: center;
+
+  @media (max-width: 1600px) {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 1300px) {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 25px;
+  }
 }
 
 .main-btn {
@@ -85,6 +178,18 @@
   &:hover {
     background-color: $color-primary;
     color: $color-dark;
+  }
+
+  @media (max-width: 800px) {
+    width: 150px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 500px) {
+    width: 130px;
+    height: 30px;
+    font-size: 10px;
   }
 }
 
@@ -114,7 +219,20 @@
       font-family: $font-sahel;
       margin-bottom: 10px;
       letter-spacing: 2px;
+      font-size: 50px;
       @include textStyle();
+
+      @media (max-width: 900px) {
+        font-size: 35px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 25px;
+      }
+
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
 
     &-paragraph {
@@ -122,6 +240,18 @@
       font-size: 30px;
       margin-bottom: 55px;
       @include textStyle();
+
+      @media (max-width: 900px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 15px;
+      }
+
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
 
     &-btn {
@@ -135,6 +265,22 @@
       border-radius: 30px;
       outline: none;
       cursor: pointer;
+
+      @media (max-width: 900px) {
+        font-size: 12px;
+        width: 130px;
+        height: 30px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 10px;
+        width: 100px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 10px;
+        width: 90px;
+      }
     }
   }
 
