@@ -137,7 +137,8 @@ body {
   transition: left 0.5s;
 }
 .card-overlay-heading {
-  font-family: Nastaliq, Tahoma;
+  font-family: Sahel, Tahoma;
+  margin-bottom: 10px;
   letter-spacing: 2px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -146,7 +147,7 @@ body {
 .card-overlay-paragraph {
   font-family: Sahel, Tahoma;
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 55px;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;

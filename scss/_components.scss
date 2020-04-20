@@ -85,7 +85,8 @@
     transition: left 0.5s;
 
     &-heading {
-      font-family: $font-nastaliq;
+      font-family: $font-sahel;
+      margin-bottom: 10px;
       letter-spacing: 2px;
       @include textStyle();
     }
@@ -93,7 +94,7 @@
     &-paragraph {
       font-family: $font-sahel;
       font-size: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 55px;
       @include textStyle();
     }
 
