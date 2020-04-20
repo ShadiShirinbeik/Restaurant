@@ -1,3 +1,62 @@
-p {
+@import "base";
+.logo {
+  @include flexLayout();
+  font-size: 70px;
+  color: $color-primary;
+  width: 110px;
+  height: 110px;
+  border: 3px solid $color-primary;
+  border-radius: 50%;
+  margin-right: 20px;
+}
 
+.main-name {
+  font-family: $font-nunito;
+  font-size: 50px;
+  color: $color-secondary;
+  @include textStyle();
+}
+
+.sub-name {
+  font-family: $font-josefinSans;
+  font-size: 18px;
+  color: $color-secondary;
+  text-align: center;
+  @include textStyle();
+}
+
+.main-heading {
+   font-family: $font-dancingScript;
+  font-size: 100px;
+  font-weight: 300;
+  color: $color-primary;
+  margin-bottom: 40px;
+
+}
+
+.sub-heading {
+  font-family: $font-josefinSans;
+  font-size: 60px;
+  font-weight: 300;
+  color: $color-secondary;
+  margin-bottom: 80px;
+}
+
+.main-btn {
+  width: 170px;
+  height: 45px;
+  font-family: $font-josefinSans;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $color-primary;
+  background-color: transparent;
+  border: 1px solid $color-primary;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-dark;
+  }
 }
