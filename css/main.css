@@ -1,21 +1,33 @@
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.eot");
+  src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+}
+@font-face {
+  font-family: Nastaliq;
+  src: url("../fonts/IranNastaliq.ttf");
+  font-weight: normal;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #262626;
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.eot");
+  src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
 }
-
+@font-face {
+  font-family: Nastaliq;
+  src: url("../fonts/IranNastaliq.ttf");
+  font-weight: normal;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: #262626;
 }
 
 .logo {
@@ -32,7 +44,7 @@ body {
 }
 
 .main-name {
-  font-family: "Nunito", sans-serif;
+  font-family: Sahel, Tahoma;
   font-size: 50px;
   color: #bbb;
   font-weight: 300;
@@ -41,7 +53,7 @@ body {
 }
 
 .sub-name {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: Sahel, Tahoma;
   font-size: 18px;
   color: #bbb;
   text-align: center;
@@ -51,7 +63,7 @@ body {
 }
 
 .main-heading {
-  font-family: "Dancing Script", cursive;
+  font-family: Nastaliq, Tahoma;
   font-size: 100px;
   font-weight: 300;
   color: #d3ab55;
@@ -59,7 +71,7 @@ body {
 }
 
 .sub-heading {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: Sahel, Tahoma;
   font-size: 60px;
   font-weight: 300;
   color: #bbb;
@@ -69,7 +81,7 @@ body {
 .main-btn {
   width: 170px;
   height: 45px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: Sahel, Tahoma;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -84,14 +96,20 @@ body {
   color: #262626;
 }
 
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.eot");
+  src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+}
+@font-face {
+  font-family: Nastaliq;
+  src: url("../fonts/IranNastaliq.ttf");
+  font-weight: normal;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: #262626;
 }
 
 .header {

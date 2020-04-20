@@ -1,13 +1,26 @@
-//variables, reset styles, mixins
+//variables, reset styles, mixins, fonts
 $color-dark: #262626;
 $color-black: #000;
 $color-primary: #d3ab55;
 $color-secondary: #bbb;
 
-$font-dancingScript: 'Dancing Script', cursive;
+$font-dancingScript: 'Dancing Scrtipt', cursive;
 $font-josefinSans: 'Josefin Sans', sans-serif;
 $font-nunito: 'Nunito', sans-serif;
+$font-sahel: Sahel, Tahoma;
+$font-nastaliq: Nastaliq, Tahoma;
 
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.eot");
+  src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+}
+
+@font-face {
+  font-family: Nastaliq;
+  src: url("../fonts/IranNastaliq.ttf");
+  font-weight: normal;
+}
 @mixin flexLayout {
   display: flex;
   justify-content: center;
@@ -30,8 +43,4 @@ $font-nunito: 'Nunito', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: $color-dark;
 }
